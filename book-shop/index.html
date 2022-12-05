@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Books</title>
+</head>
+<body onload="onInit()">
+    <div class="filter" onchange="onSetFilterBy({minRate: this.value})">
+        <h2>Filter</h2>
+        <label>
+            Max Price:
+            <input type="range" min="0" max="1000" value="1000" class="filter-books-maxPrice"
+                onchange="this.title=this.value;onSetFilterBy({maxPrice: this.value})" />
+        </label>
+        <label>
+            Min Range:
+            <input type="range" min="0" max="10" value="0" class="filter-books-minRate"
+                onchange="this.title=this.value;onSetFilterBy({minRate: this.value})" />
+        </label>
+    </div>
+    <button onclick="onPrevPage(this)" class="prev-button">prev</button>
+    <button onclick="onNextPage(this)" class="next-button">next</button>
+    <div class="create-container"></div>
+    <div class="books-container"></div>
+    <div class="modal">
+        <button class="close-model" onclick="closeModal()">x</button>
+        <h2>Title: <span class="name"></span></h2>
+        <h2>Id: <span class="id"></span></h2>
+        <h2>Price: <span class="price"></span></h2>
+        <button class="rate-button" onclick="onUpdateRate(this)">+</button> <span class="rate"></span> <button class="rate-button" onclick="onUpdateRate(this)">-</button>
+        <div class="img-div" ></div>
+    </div>
+
+    <div class="switch-table-card">
+        Show books by: 
+        <button onclick="switchTableCard(this)">Table</button>
+        <button onclick="switchTableCard(this)">Card</button>
+    </div>
+
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/book.service.js"></script>
+    <script src="js/services/main.js"></script>
+</body>
+</html>

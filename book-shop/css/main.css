@@ -1,0 +1,163 @@
+
+body{
+    /* margin: 0; */
+    background-color: blue;
+}
+
+.books-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+thead{
+    background-color: rgb(15, 243, 113);
+}
+
+tbody{
+    background-color: rgb(126, 239, 160);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: large;
+    text-align: center;
+  }
+
+td{
+    height: 50px;
+    width: 150px;
+}
+
+.action{
+    width: 450px;
+}
+
+button{
+    border-radius: 10px;
+    font-size: large;
+    height: 30px;
+    width: 100px;
+}
+
+.read{
+    background-color: blue;
+}
+
+.update{
+    background-color: orange;
+}
+
+.delete{
+    background-color: red;
+}
+
+.create{
+    background-color: purple;
+    height: 50px;
+    width: 200px;
+    margin-right: 1000px;
+}
+
+.modal {
+    background-color: #111;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 150%;
+    height: 60vh;
+    border-radius: 10px;
+    text-align: center;
+    transition: left .5s;
+    color: aliceblue;
+}
+
+.modal.open {
+    left: 80%;
+}
+
+.modal button{
+    width: 30px;
+    background-color:rgb(151, 148, 148);
+}
+
+.close-model{
+    float: right;
+    margin-bottom: 20px;
+}
+
+.filter{
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.filter label{
+    margin-left: 20px;
+}
+
+.img-div{
+    margin-top: 30px;
+    background-color: aliceblue;
+}
+
+img{
+    width: 150px;
+}
+
+.books-card{
+    background-color: white;
+    color: rgb(79, 107, 233);
+    width: 15%;
+    height: 80%;
+    margin:.5em;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.delete-card{
+    float:right;
+    width: 30px;
+    background-color:rgb(151, 148, 148);
+}
+
+.hide{
+    display: none;
+}
+
+h2{
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.books-card .button-div{
+    margin-bottom: 20px;
+}
+
+.switch-table-card{
+    font-size: large;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+.switch-table-card button{
+    background-color: turquoise;
+}
+
+.create-container{
+    margin-top: 50px;
+}
+
+
+
+
